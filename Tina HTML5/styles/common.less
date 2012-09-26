@@ -1,0 +1,371 @@
+@import "reset";
+@import "grid";
+@import "fonts";
+@import "colors";
+
+// Common elements used throughout the website.
+@gigantic: 24px;
+@heading: 20px;
+@larger: 18px;
+@large: 16px;
+@body: 14px;
+@smaller: 12px;
+
+
+
+.small {
+    font-size: 11px;
+}
+
+.Museo-700 { 
+	font-family: Museo-700;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.Museo-300 { 
+	font-family: Museo-300;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.Museo-500 { 
+	font-family: Museo-500;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.default-font {
+    font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.header-font {
+    font-family: Museo-300, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.btn-font {
+    font-family: Museo-500, 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1 {
+    .header-font;
+    font-size: 26px;
+    color: @standout;
+    margin-bottom: 10px;
+    text-shadow: 0px 2px 0px @white;
+    position: relative;
+    font-weight: normal;
+}
+
+h2 {
+    .header-font;
+    font-size: 26px;
+    color: @heading-color;
+    margin-bottom: 10px;
+    text-shadow: 0px 2px 0px @white;
+    position: relative;
+    opacity: .9; // A hack to get the typeface to be slimmer
+    font-weight: normal;
+}
+
+h3 {
+    .header-font;
+    font-size: 20px;
+    color: @heading-color;
+    margin-bottom: 15px;
+    opacity: .9; // A hack to get the typeface to be slimmer
+    position: relative;
+    font-weight: normal;
+}
+
+h5 {
+   .header-font;
+   font-size: 16px; 
+   margin-bottom: 20px;
+   font-weight: normal;
+   color: @heading-color;
+}
+
+h6 {
+   font-size: 16px; 
+   margin-bottom: 20px;
+}
+
+.base-text-style {
+    .default-font;
+    color: @black-grey;
+    font-size: @body;
+    line-height: 1.5;
+}
+
+.right {
+    position: relative;
+    float: right;
+}
+
+.left {
+    position: relative;
+    float: left;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rounded-corners (@radius: 5px) {
+    border-radius: @radius;
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+}
+
+.gradient(@start, @stop, @texture: none) {
+    background: @start; // Old browsers
+    background-image: @texture;
+    background-image: @texture, -moz-linear-gradient(top,  @start 0%, @stop 100%); /* FF3.6+ */
+    background-image: @texture, -webkit-gradient(linear, left top, left bottom, color-stop(0%,@start), color-stop(100%,@stop)); /* Chrome,Safari4+ */
+    background-image: @texture, -webkit-linear-gradient(top,  @start 0%,@stop 100%); /* Chrome10+,Safari5.1+ */
+    background-image: @texture, -o-linear-gradient(top, @start 0%,@stop 100%); /* Opera 11.10+ */
+    background-image: @texture, -ms-linear-gradient(top, @start 0%,@stop 100%); /* IE10+ */
+    background-image: @texture, linear-gradient(top, @start 0%,@stop 100%); /* W3C */
+}
+
+.highlight-gradient(@start, @mid, @stop, @texture: none) {
+    background: @stop; // Old browsers
+    background-image: @texture;
+    background-image: @texture, -moz-linear-gradient(top,  @start 0%, @mid 2%, @stop 100%); /* FF3.6+ */
+    background-image: @texture, -webkit-gradient(linear, left top, left bottom, color-stop(0%, @start), color-stop(2%, @mid), color-stop(100%, @stop)); /* Chrome,Safari4+ */
+    background-image: @texture, -webkit-linear-gradient(top,  @start 0%, @mid 2%, @stop 100%); /* Chrome10+,Safari5.1+ */
+    background-image: @texture, -o-linear-gradient(top,  @start 0%, @mid 2%, @stop 100%); /* Opera 11.10+ */
+    background-image: @texture, -ms-linear-gradient(top,  @start 0%, @mid 2%, @stop 100%); /* IE10+ */
+    background-image: @texture, linear-gradient(top,  @start 0%, @mid 2%, @stop 100%); /* W3C */
+}
+
+.light-text-shadow {
+    text-shadow: 0px 1px 0px @white;
+}
+
+.box-shadow(@style, @c) {
+  box-shadow:         @style @c;
+  -webkit-box-shadow: @style @c;
+  -moz-box-shadow:    @style @c;
+}
+
+.divider {
+    width: 100%;
+    border-top: 1px solid @light-grey;
+    border-bottom: 1px solid @white;
+}
+
+.clear {
+    clear: both;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    .base-text-style;
+    background-color: @grey-tint;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: @link-color;
+
+    &:hover { text-decoration: underline }
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+ul li { list-style-type: none }
+
+
+.standout-btn {
+    .highlight-gradient(@white, @standout, darken(@standout, 15%));
+    .rounded-corners(3px);
+    .header-font;
+    text-shadow: 0px -1px 0px darken(@standout, 40%);
+    color: @white;
+    font-size: 20px;
+    border: 1px solid  darken(@standout, 25%);
+    padding: 4px 15px;
+    font-weight: 500;
+    position: relative;
+
+    &:hover {
+        .gradient(lighten(@standout, 10%), darken(@standout, 15%));
+        cursor: pointer;
+    }
+
+    &:active {
+        .gradient(darken(@standout, 15%), @standout);
+    }
+
+    .next {
+        .sprite;
+        .sprite-action;
+        width: 11px;
+        height: 17px;
+        top: 2px;
+        margin-left: 5px;
+        position: relative;
+        display: inline-block;
+    }
+
+    &.small-btn { 
+        .left;
+        padding: 2px 8px !important;
+        margin-right: 5px;
+        .rounded-corners(2px);
+        font-size: 12px;
+    }
+}
+
+.default-btn {
+    .highlight-gradient(@white, @grey-tint, @medium-grey);
+    .header-font;
+    .light-text-shadow;
+    .rounded-corners(3px);
+    border: 1px solid @border-grey;
+    padding: 4px 10px;
+    .left;
+
+    &:hover {
+        .gradient(lighten(@grey-tint, 10%), @medium-grey);
+        cursor: pointer;
+    }
+
+    &:active {
+        .gradient(@medium-grey, @grey-tint);
+    }
+
+    &.small-btn { 
+        font-size: 12px;
+        padding: 2px 8px !important;
+        margin-right: 5px;
+        .rounded-corners(2px);
+    }
+}
+
+.large-btn {
+    padding: 0px;
+    font-size: 16px;
+
+    .icon {
+        margin: 5px 7px 0px 7px;
+        float: left;
+    }
+
+    .label {
+        margin: 0px 10px 0px 7px;
+        line-height: 40px;
+    }
+
+}
+
+.action-btn {
+    .highlight-gradient(@white, @link-color, @heading-color);
+    .header-font;
+    .rounded-corners(3px);
+    text-shadow: 0px -1px 0px darken(@heading-color, 25%);
+    border: 1px solid @heading-color;
+    .left;
+    color: @white;
+    padding: 4px 10px;
+    margin-right: 5px;
+
+    &:hover {
+        .gradient(lighten(@link-color, 10%), @heading-color);
+    }
+
+    &:active {
+        .gradient(@heading-color, @link-color);
+    }
+
+    &.small-btn { 
+        padding: 2px 8px !important;
+        margin-right: 5px;
+        .rounded-corners(2px);
+        font-size: 12px;
+    }
+}
+
+.container {
+    .center;
+    .rounded-corners(3px);
+    .box-shadow(0px 1px 0px, @white);
+    padding: 20px 0px;
+    border: 1px solid @medium-grey;
+}
+
+ul.dropdown-menu {
+    .light-text-shadow;
+    .gradient(@grey-tint, @light-grey);
+    border: 1px solid @border-grey;
+    border-top: none;
+
+    display: none;
+    color: @black-grey;
+    position: absolute;
+    right: 0px;
+    z-index: 100;
+    top: 61px;
+    -webkit-box-shadow:  0px 2px 5px 0px rgba(0, 0, 0, .1);
+            box-shadow:  0px 2px 5px 0px rgba(0, 0, 0, .1);
+       -moz-box-shadow:  0px 2px 5px 0px rgba(0, 0, 0, .1);   
+
+    li {
+        padding: 5px 15px;
+        &:hover { 
+            background-color: @link-color;
+
+            &> a {
+                color: @white;
+                text-shadow: 0px -1px 0px darken(@link-color, 25%);
+            }
+        }
+
+        a {
+            font-weight: 300;
+            &:hover { text-decoration: none }
+
+            color: @link-color;
+            .light-text-shadow;
+        }
+
+        &.divider {
+            border-top: 1px solid @border-grey;
+            border-bottom: 1px solid @white;
+            padding: 0px;
+        }
+    }
+}
+
+.photo {
+    border: 1px solid @border-grey;
+    background-color: @white;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+
+    -webkit-box-shadow:  0px 0px 2px 0px rgba(0, 0, 0, .25);
+            box-shadow:  0px 0px 2px 0px rgba(0, 0, 0, .25);
+       -moz-box-shadow:  0px 0px 2px 0px rgba(0, 0, 0, .25);   
+
+    img {
+        width: 100px;
+        height: 100px;
+        position: relative;
+    }
+}
+

@@ -1,0 +1,12 @@
+@white: #fff;
+@grey-tint: #f3f3f3;
+@light-grey: #eee;
+@medium-grey: #ddd;
+@grey: #999;
+@border-grey: #ccc;
+@dark-grey: #666;
+@black-grey: #333;
+@standout: #e54045;
+@link-color: #50bfd7;
+@heading-color: #348eaa;
+@texture: url(../images/bg_noise.png);

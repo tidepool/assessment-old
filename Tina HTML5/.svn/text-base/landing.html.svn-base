@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TidePool | Home</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet/less" type="text/css" href="styles/skin.less">
+
+    <script src="scripts/less-1.3.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="scripts/modernizr.custom.91276.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <div id="banner">
+            <nav class="grid_12">
+                <div id="sign-in">
+                    <a href="">Sign In</a>
+                </div>
+                <a href=""><div id="logo"></div></a>
+            </nav>
+        </div>
+        <div id="logo-holder"></div>
+    </header>
+    <div id="main-panel">
+        <div id="main-content">
+            <div id="saved" class="grid_7">
+                Hi there! We notice that you didn't complete the assessment. <a href="">Resume&nbsp;&raquo;</a>
+            </div>
+            <div id="images">
+                <img src="images/horse.jpg" class="select-image" />
+                <img src="images/man.jpg" class="select-image" />
+                <div class="clear"></div>
+                <div id="prompt" class="grid_5">
+                    <div id="tagline">Discover who you are at work</div>
+                    <div id="action-msg">Click on the photo you like more to begin</div>
+                </div>
+                <div class="clear"></div>
+            </div>    
+            <div id="steps" class="grid_12">
+                <div class="step grid_4">
+                    <div class="heading">
+                        <div class="number">1</div>
+                        <div class="msg">Discover your WorkType</div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="content grid_3">Take a quick, fun photo assessment that reveals who you are</div>
+                </div>
+                <div class="step grid_4">
+                    <div class="heading">
+                        <div class="number">2</div>
+                        <div class="msg">Compare with your network</div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="content grid_3">Share your WorkType with friends and colleagues on Facebook and LinkedIn and discover theirs.</div>
+                </div>
+                <div class="step grid_4">
+                    <div class="heading">
+                        <div class="number">3</div>
+                        <div class="msg">Build better working relationships</div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="content grid_3">TidePool will suggest ways for you to create a better experience when working together.</div>
+                </div>
+                <div class="clear"></div>
+            </div>    
+            <div class="clear"></div>
+        </div>    
+    </div>
+    <div class="clear"></div>
+    <footer>
+        <div class="grid_12 center">
+            <ul id="links">
+                <li><a id="blogLink" href="http://blog.tidepool.co">Blog</a></li>
+                <li><a id="teamLink" href="team.php">Team</a></li>
+                <li><a id="investLink" href="investors.php">Investors</a></li>
+                <li><a id="contactLink" href="mailto:info@tidepool.co" title="[GMCP] Compose a new mail to Contact" onclick="window.open('https://mail.google.com/mail/u/0/?view=cm&amp;fs=1&amp;tf=1&amp;to=info@tidepool.co','Compose new message','width=640,height=480');return false" rel="noreferrer">Contact</a></li>
+                <li><a id="condLink" href="terms_conditions.php">Terms and Conditions</a></li>
+                <li><a id="privacyLink" href="privacy_policy.php">Privacy Policy</a></li>
+            </ul>
+
+            <ul id="connect">
+                <a id="facebookLink" href="http://www.facebook.com/pages/Tidepool-Inc/193445914068454" target="_blank"><li id="fb"></li></a>
+                <a id="linkedLink" href="http://www.linkedin.com/company/2427695" target="_blank"><li id="in"></li></a>
+                <a id="twitterLink" href="https://twitter.com/#!/TidePoolInc" target="_blank"><li id="tw"></li></a>
+            </ul>
+            <div class="clear"></div>
+            <div id="copyright">&copy;2012 TidePool, Inc.</div>
+            <div class="clear"></div>
+        </div>    
+    </footer>
+</body>
+</html>
+

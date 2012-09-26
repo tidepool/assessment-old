@@ -1,0 +1,191 @@
+@import "colors";
+@import "common";
+@import "sprites";
+
+#main-panel {    
+    background: @texture @white; 
+    border-top: 1px solid @white;
+    border-bottom: 1px solid @medium-grey;
+    position: relative;
+}
+
+#container {
+    margin: 100px 0;
+    border: 1px solid @medium-grey;
+    .center;
+    padding: 10px;
+    position: relative;
+
+    -webkit-box-shadow: inset 1px -1px 15px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow:    inset 1px -1px 15px rgba(0, 0, 0, 0.15);
+    box-shadow:         inset 1px -1px 15px rgba(0, 0, 0, 0.15);   
+}
+
+#footer {
+    .light-text-shadow;
+    .default-font;
+    padding: 10px 0;
+    font-size: 12px;
+    color: @grey;
+    margin-left: 20px;
+    margin-top: 10px;
+
+    a {
+        color: @link-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    #links {
+        position: relative;
+        float: left;
+
+        li {
+            position: relative;
+            float: left;
+            margin: 0px 15px;
+        }
+    }
+
+
+    #connect {
+        position: relative;
+        float: right;
+        margin-left: 15px;
+
+        li {
+            margin-right: 5px;
+            position: relative;
+            float: left;
+
+        }
+    }
+
+    #address {
+        top: -10px;
+        position: relative;
+    }
+
+    #copyright {
+        position: relative;
+        float: left;
+    }
+
+    #fb {
+        .sprite;
+        .sprite-fb;
+        height: 30px;
+        width: 30px;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+    
+    #in {
+        .sprite;
+        .sprite-in;
+        height: 30px;
+        width: 30px;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    #tw {
+        .sprite;
+        .sprite-tw;
+        height: 30px;
+        width: 30px;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+}
+
+#logo {
+    .center;
+    background: url(../images/logo_150.png) no-repeat;
+    position: relative;
+    width: 150px;
+    height: 85px;
+    margin-top: 30px;
+}
+
+#content {
+    .rounded-corners(2px);
+    border: 1px solid @medium-grey;
+    background-color: @white;
+}
+
+#from {
+    background: @light-grey;
+    border: 1px solid @medium-grey;
+    border-left: none;
+    border-right: none;
+    margin: 30px 0;
+    padding: 5px;
+    text-align: center;
+    .header-font;
+    color: @heading-color;
+    font-size: 26px;
+    text-shadow: 0px 2px 0px @white;
+    opacity: .9;
+}
+
+#focus {
+    .center;
+    text-align: center;
+
+    #action {
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+
+    #msg {
+        margin-top: 60px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    #badge {
+        .rounded-corners(2px);
+        background: @light-grey;
+        border: 1px solid @medium-grey;
+        .center;
+        text-align: left;
+
+        img {
+            position: relative;
+            float: left;
+            margin: 20px;
+        }
+
+        #info {
+
+        }
+
+        #worktype {
+            position: relative; 
+            float: left;
+            font-size: 20px;
+            .header-font;
+            color: @standout;
+            .light-text-shadow;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        #short-desc {
+            position: relative; 
+            float: left;
+        }
+    }
+}
+

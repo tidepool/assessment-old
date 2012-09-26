@@ -1,0 +1,50 @@
+<dark>
+    <pictureSelection>
+        <moon>4</moon>
+        <sun>2</sun>
+        <flower>6</flower>
+        <castle>5</castle>
+        <face>1</face>
+    </pictureSelection>
+    <response>
+        <moon>Low Creativity</moon>
+        <sun>Moderate Assertiveness</sun>
+        <flower>Positive Mood</flower>
+        <castle>A Doer</castle>
+        <face>Emotionally Expressive</face>
+    </response>
+    <ordering>
+        <choice1>face</choice1>
+        <choice2>flower</choice2>
+        <choice3>sun</choice3>
+        <choice4>castle</choice4>
+        <choice5>moon</choice5>
+    </ordering>
+    <movie>Drama</movie>
+    <sliders>
+        <num0>91</num0>
+        <num1>93</num1>
+        <num2>26</num2>
+        <num3>49</num3>
+        <num4>95</num4>
+    </sliders>
+    <changes>
+        <select>548</select>
+        <select>365</select>
+        <select>486</select>
+        <select>382</select>
+        <select>522</select>
+        <feedback>753</feedback>
+        <feedback>381</feedback>
+        <feedback>455</feedback>
+        <feedback>467</feedback>
+        <feedback>496</feedback>
+        <dragsort>1-2-3-4-5*1#2-3-4-1-5@1091*5#2-5-3-4-1@649*2#5-3-2-4-1@ *@3089</dragsort>
+        <genre>713</genre>
+        <slider>*68@1216*91@288</slider>
+        <slider>*7@580*15@273*27@200*53@358*86@514*93@264*10@823*92@1154</slider>
+        <slider>*25@686</slider>
+        <slider/>
+        <slider>*74@1486*94@230</slider>
+    </changes>
+</dark>

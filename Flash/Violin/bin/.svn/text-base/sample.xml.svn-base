@@ -1,0 +1,44 @@
+<values>
+  <independent>
+    <achievement>23</achievement>
+    <challenge>78</challenge>
+    <independence>10</independence>
+    <money>76</money>
+    <power>17</power>
+    <recognition>48</recognition>
+    <service>80</service>
+    <variety>80</variety>
+    <changes>
+      <achievement>*63@1828*80@192*27@336*22@176</achievement>
+      <challenge>*77@1040</challenge>
+      <independence>*9@1128</independence>
+      <money>*74@966</money>
+      <power>*15@1316</power>
+      <recognition/>
+      <service/>
+      <variety/>
+    </changes>
+  </independent>
+  <order>
+    <choice1>Independence</choice1>
+    <choice2>Recognition</choice2>
+    <choice3>Achievement</choice3>
+    <choice4>Variety</choice4>
+    <choice5>Power</choice5>
+    <choice6>Money</choice6>
+    <choice7>Challenge</choice7>
+    <choice8>Service to Others</choice8>
+    <changes>3-5-1-8-6-4-2-7*5@637*3-1-8-6-5-4-2-7@489*6@2271*4@1174*6@2005*3-1-6-8-5-4-2-7@1972*1@2200*3-6-1-8-5-4-2-7@ *@14165</changes>
+  </order>
+  <percentages>
+    <achievement>9</achievement>
+    <challenge>12</challenge>
+    <independence>15</independence>
+    <money>15</money>
+    <power>18</power>
+    <recognition>6</recognition>
+    <service>7</service>
+    <variety>14</variety>
+    <changes>*20-12-12-12-12-12-12-4@5215*13-20-12-12-12-12-12-4@3327*13-17-15-12-12-12-12-4@2232*13-17-15-12-12-12-12-4@1732*13-17-15-12-12-12-12-4@2517*13-17-6-21-12-12-12-4@4950*13-8-14-21-12-12-12-4@2133*7-13-14-21-12-12-12-4@7651*7-24-4-21-12-12-12-4@2166*7-15-13-21-12-12-12-4@3050*7-0-28-21-12-12-12-4@3934*7-0-28-21-12-12-12-4@2333*3-0-28-21-12-12-12-8@2566*3-0-28-21-12-12-7-14@1650*1-1-28-21-12-12-7-14@2351*1-20-9-21-12-12-7-14@1683*9-12-9-21-12-12-7-14@1701*9-12-23-7-12-12-7-14@1849*9-12-23-7-18-6-7-14@25701*9-12-15-15-18-6-7-14@4 *@82488</changes>
+  </percentages>
+</values>

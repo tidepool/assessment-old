@@ -1,0 +1,161 @@
+package  
+{
+	import flash.display.MovieClip;
+	import flash.display.Loader;
+	import flash.display.Sprite;
+	import flash.events.Event;
+	import flash.events.MouseEvent;
+	import flash.events.ProgressEvent;
+	import flash.geom.Point;
+	import flash.media.Video;
+	import flash.net.URLRequest;
+	/**
+	 * ...
+	 * @author wei
+	 */
+	public class Picture extends MovieClip 
+	{
+		public var main:Object;
+		public var positionX:Number;
+		public var positionY:Number;
+		public var myLoader:Loader = new Loader();
+		public var sprite:Sprite = new Sprite();
+		public var string:String = new String();
+		public var length:Number;
+		public var maskLoader:Loader = new Loader();
+		public var masksprite:Sprite = new Sprite();
+		
+		public var isLoaded:Boolean = false;
+		
+		public var isCenterPosition:Boolean;
+		
+		public function Picture(p_main:Object,p_x:Number,p_y:Number,s:String,p_length:Number,p_isCenterPosition:Boolean=true) 
+		{
+			main = p_main;
+			positionX = p_x;
+			positionY = p_y;
+			myLoader.contentLoaderInfo.addEventListener(Event.COMPLETE, onLoaderReady);
+			var fileRequest:URLRequest = new URLRequest(s);
+			myLoader.load(fileRequest);
+			string = s;
+			length = p_length;
+			main.addEventListener(Event.ENTER_FRAME, update);
+			isCenterPosition = p_isCenterPosition;
+		}
+		
+		public function onLoaderReady(e:Event) :void
+		{
+			sprite.addChild(myLoader);
+			
+			main.addChild(sprite);
+			
+			
+			var a:Number = myLoader.width;
+			if (myLoader.height > a)
+			{
+				a = myLoader.height;
+			}
+			myLoader.scaleX = 1 / a * length;
+			myLoader.scaleY = 1 / a * length;
+			var scale:Number = 1 / a * length;
+			if (isCenterPosition)
+			{
+				sprite.x = positionX - myLoader.width / 2*sprite.scaleX;
+				sprite.y = positionY - myLoader.height / 2 * sprite.scaleY;
+			}
+			else
+			{
+				sprite.x = positionX;
+				sprite.y = positionY;
+			}
+
+			if (main.contains(sprite))
+			{
+				main.setChildIndex(sprite,main.numChildren-1);
+			}
+			
+			isLoaded = true;
+		} 
+		
+		public function update(e:Event):void
+		{
+			if (isLoaded)
+			{
+				positionX = sprite.x + myLoader.width / 2 * sprite.scaleX;
+				positionY = sprite.y + myLoader.height / 2 * sprite.scaleY;
+			}
+		}
+		
+		public function loadNew(s:String,l:Number=100):void
+		{
+			myLoader.scaleX = 1;
+			myLoader.scaleY = 1;
+			if(sprite.contains(myLoader))
+			sprite.removeChild(myLoader);
+			myLoader.contentLoaderInfo.addEventListener(Event.COMPLETE, onLoaderReady);
+			var fileRequest:URLRequest = new URLRequest(s);
+			myLoader.load(fileRequest);
+			string = s;
+			length = l;
+			
+		}
+		
+		public function setLength(l:Number):void
+		{
+			length = l;
+			var a:Number = myLoader.width;
+			if (myLoader.height > a)
+			{
+				a = myLoader.height;
+			}
+			sprite.scaleX = 1 / a * length;
+			sprite.scaleY = 1 / a * length;
+			sprite.x = positionX - myLoader.width / 2*sprite.scaleX;
+			sprite.y = positionY - myLoader.height / 2 * sprite.scaleX;
+		}
+		
+		public function setYLength(l:Number):void
+		{
+			length = l;
+			var a:Number = myLoader.width;
+				a = 108;
+			sprite.scaleY = 1 / a * length;
+			sprite.y = positionY - myLoader.height / 2 * sprite.scaleX;
+		}
+		
+		public function getPosition():Point
+		{
+			positionX = sprite.x + myLoader.width / 2 * sprite.scaleX;
+			positionY = sprite.y + myLoader.height / 2 * sprite.scaleY;
+			return new Point(positionX,positionY);
+		}
+		
+		public function setPosition(px:Number, py:Number):void
+		{
+			positionX = px;
+			positionY = py;
+			
+			if (isCenterPosition)
+			{
+				sprite.x = positionX - myLoader.width / 2*sprite.scaleX;
+				sprite.y = positionY - myLoader.height / 2 * sprite.scaleY;
+			}
+			else
+			{
+				sprite.x = positionX;
+				sprite.y = positionY;
+			}
+			sprite.y = positionY - myLoader.height / 2 * sprite.scaleY;
+		}
+		
+		public function remove():void
+		{
+			main.removeEventListener(Event.ENTER_FRAME, update);
+			if (main.contains(sprite))
+			{
+				main.removeChild(sprite);
+			}
+		}
+	}
+
+}

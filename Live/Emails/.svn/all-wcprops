@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/assesmentnew/!svn/ver/673/Live/Emails
+END
+sendRespondEmail.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/assesmentnew/!svn/ver/671/Live/Emails/sendRespondEmail.php
+END
+sendWelcomeEmail.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/assesmentnew/!svn/ver/671/Live/Emails/sendWelcomeEmail.php
+END
+sendFriendSignUpEmail.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/assesmentnew/!svn/ver/671/Live/Emails/sendFriendSignUpEmail.php
+END
+sendPasswordReset.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/assesmentnew/!svn/ver/671/Live/Emails/sendPasswordReset.php
+END
+sendInviteEmail.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/assesmentnew/!svn/ver/671/Live/Emails/sendInviteEmail.php
+END
+sendRequestedEmail.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/assesmentnew/!svn/ver/671/Live/Emails/sendRequestedEmail.php
+END
+sendVerifyEmail.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/assesmentnew/!svn/ver/673/Live/Emails/sendVerifyEmail.php
+END

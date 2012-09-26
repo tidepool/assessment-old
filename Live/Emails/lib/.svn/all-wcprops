@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/assesmentnew/!svn/ver/671/Live/Emails/lib
+END
+mime_types.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/assesmentnew/!svn/ver/671/Live/Emails/lib/mime_types.php
+END
+swift_required.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/assesmentnew/!svn/ver/671/Live/Emails/lib/swift_required.php
+END
+swift_init.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/assesmentnew/!svn/ver/671/Live/Emails/lib/swift_init.php
+END
+preferences.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/assesmentnew/!svn/ver/671/Live/Emails/lib/preferences.php
+END
+swift_required_pear.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/assesmentnew/!svn/ver/671/Live/Emails/lib/swift_required_pear.php
+END
+SmtpApiHeader.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/assesmentnew/!svn/ver/671/Live/Emails/lib/SmtpApiHeader.php
+END

@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project version="2">
+  <!-- Output SWF options -->
+  <output>
+    <movie outputType="Application" />
+    <movie input="" />
+    <movie path="bin\Frames.swf" />
+    <movie fps="30" />
+    <movie width="1600" />
+    <movie height="800" />
+    <movie version="10" />
+    <movie minorVersion="0" />
+    <movie platform="Flash Player" />
+    <movie background="#FFFFFF" />
+  </output>
+  <!-- Other classes to be compiled into your SWF -->
+  <classpaths>
+    <class path="src" />
+  </classpaths>
+  <!-- Build options -->
+  <build>
+    <option accessible="False" />
+    <option allowSourcePathOverlap="False" />
+    <option benchmark="False" />
+    <option es="False" />
+    <option locale="" />
+    <option loadConfig="" />
+    <option optimize="True" />
+    <option omitTraces="True" />
+    <option showActionScriptWarnings="True" />
+    <option showBindingWarnings="True" />
+    <option showInvalidCSS="True" />
+    <option showDeprecationWarnings="True" />
+    <option showUnusedTypeSelectorWarnings="True" />
+    <option strict="True" />
+    <option useNetwork="True" />
+    <option useResourceBundleMetadata="True" />
+    <option warnings="True" />
+    <option verboseStackTraces="False" />
+    <option linkReport="" />
+    <option loadExterns="" />
+    <option staticLinkRSL="True" />
+    <option additional="" />
+    <option compilerConstants="" />
+    <option minorVersion="" />
+  </build>
+  <!-- SWC Include Libraries -->
+  <includeLibraries>
+    <!-- example: <element path="..." /> -->
+  </includeLibraries>
+  <!-- SWC Libraries -->
+  <libraryPaths>
+    <!-- example: <element path="..." /> -->
+  </libraryPaths>
+  <!-- External Libraries -->
+  <externalLibraryPaths>
+    <!-- example: <element path="..." /> -->
+  </externalLibraryPaths>
+  <!-- Runtime Shared Libraries -->
+  <rslPaths>
+    <!-- example: <element path="..." /> -->
+  </rslPaths>
+  <!-- Intrinsic Libraries -->
+  <intrinsics>
+    <!-- example: <element path="..." /> -->
+  </intrinsics>
+  <!-- Assets to embed into the output SWF -->
+  <library>
+    <asset path="bin\assets\personality\10a.jpg" />
+    <asset path="bin\assets\personality\10b.jpg" />
+    <asset path="bin\assets\personality\11a.jpg" />
+    <asset path="bin\assets\personality\11b.jpg" />
+    <asset path="bin\assets\personality\12a.jpg" />
+    <asset path="bin\assets\personality\12b.jpg" />
+    <asset path="bin\assets\personality\13a.jpg" />
+    <asset path="bin\assets\personality\13b.jpg" />
+    <asset path="bin\assets\personality\14a.jpg" />
+    <asset path="bin\assets\personality\14b.jpg" />
+    <asset path="bin\assets\personality\15a.jpg" />
+    <asset path="bin\assets\personality\15b.jpg" />
+    <asset path="bin\assets\personality\16a.jpg" />
+    <asset path="bin\assets\personality\16b.jpg" />
+    <asset path="bin\assets\personality\1a.jpg" />
+    <asset path="bin\assets\personality\1b.jpg" />
+    <asset path="bin\assets\personality\1c.jpg" />
+    <asset path="bin\assets\personality\1d.jpg" />
+    <asset path="bin\assets\personality\1e.jpg" />
+    <asset path="bin\assets\personality\2a.jpg" />
+    <asset path="bin\assets\personality\2b.jpg" />
+    <asset path="bin\assets\personality\2c.jpg" />
+    <asset path="bin\assets\personality\2d.jpg" />
+    <asset path="bin\assets\personality\2e.jpg" />
+    <asset path="bin\assets\personality\3a.jpg" />
+    <asset path="bin\assets\personality\3b.jpg" />
+    <asset path="bin\assets\personality\3c.jpg" />
+    <asset path="bin\assets\personality\3d.jpg" />
+    <asset path="bin\assets\personality\3e.jpg" />
+    <asset path="bin\assets\personality\4a.jpg" />
+    <asset path="bin\assets\personality\4b.jpg" />
+    <asset path="bin\assets\personality\4c.jpg" />
+    <asset path="bin\assets\personality\4d.jpg" />
+    <asset path="bin\assets\personality\4e.jpg" />
+    <asset path="bin\assets\personality\5a.jpg" />
+    <asset path="bin\assets\personality\5b.jpg" />
+    <asset path="bin\assets\personality\5c.jpg" />
+    <asset path="bin\assets\personality\5d.jpg" />
+    <asset path="bin\assets\personality\5e.jpg" />
+    <asset path="bin\assets\personality\6a.jpg" />
+    <asset path="bin\assets\personality\6b.jpg" />
+    <asset path="bin\assets\personality\6c.jpg" />
+    <asset path="bin\assets\personality\6d.jpg" />
+    <asset path="bin\assets\personality\6e.jpg" />
+    <asset path="bin\assets\personality\7a.jpg" />
+    <asset path="bin\assets\personality\7b.jpg" />
+    <asset path="bin\assets\personality\8a.jpg" />
+    <asset path="bin\assets\personality\8b.jpg" />
+    <asset path="bin\assets\personality\9a.jpg" />
+    <asset path="bin\assets\personality\9b.jpg" />
+    <asset path="bin\assets\personality\background.png" />
+    <asset path="bin\assets\personality\frames.png" />
+    <asset path="bin\assets\personality\frames2.png" />
+    <asset path="bin\assets\personality\nextButton.png" />
+    <asset path="bin\assets\personality\nextButton2.png" />
+    <asset path="bin\assets\personality\trashCan.png" />
+  </library>
+  <!-- Class files to compile (other referenced classes will automatically be included) -->
+  <compileTargets>
+    <compile path="src\Main.as" />
+  </compileTargets>
+  <!-- Paths to exclude from the Project Explorer tree -->
+  <hiddenPaths>
+    <!-- example: <hidden path="..." /> -->
+  </hiddenPaths>
+  <!-- Executed before build -->
+  <preBuildCommand />
+  <!-- Executed after build -->
+  <postBuildCommand alwaysRun="False" />
+  <!-- Other project options -->
+  <options>
+    <option showHiddenPaths="False" />
+    <option testMovie="Default" />
+  </options>
+  <!-- Plugin storage -->
+  <storage />
+</project>

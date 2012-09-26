@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/assesmentnew/!svn/ver/671/Live/Emails/lib/classes/Swift/Transport/Esmtp/Auth
+END
+PlainAuthenticator.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/assesmentnew/!svn/ver/671/Live/Emails/lib/classes/Swift/Transport/Esmtp/Auth/PlainAuthenticator.php
+END
+CramMd5Authenticator.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/assesmentnew/!svn/ver/671/Live/Emails/lib/classes/Swift/Transport/Esmtp/Auth/CramMd5Authenticator.php
+END
+LoginAuthenticator.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/assesmentnew/!svn/ver/671/Live/Emails/lib/classes/Swift/Transport/Esmtp/Auth/LoginAuthenticator.php
+END

@@ -1,0 +1,110 @@
+<?php
+/*
+if($_SERVER['SERVER_PORT'] != '443')
+{
+    header('Location: https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+    //exit();
+}
+*/
+        ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="images/LogoHalf.png" type="image/png">
+<title>Tidepool</title>
+<style type="text/css">
+.title {
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size:64px;
+	color:#F2F2F2;
+	font-style:italic;
+	font-weight:bold;
+}
+.textlabel {
+  float: left;
+  width: 200px;
+  text-align: right;
+  vertical-align: middle;
+}
+.form {
+	text-align:center;
+	background-color:white;
+	color:#000;
+	width: 50%;
+	opacity:0.8;
+	padding: 60px;
+}
+.input {
+	
+	text-align:center;
+	background-color:#7CCAF8;
+	color:#000;
+	font-size:18px;
+	padding: 5px;
+}
+body
+{
+	background-image:url('images/background.jpg');
+	background-size:100%;
+	background-repeat:no-repeat;
+} 
+.main {
+	width:100%;
+}
+.statement {
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-style: italic;
+	font-weight: bold;
+	color: black;
+}
+.text {
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	color: black;
+	padding:10px;
+}
+
+<script>
+function checkEmail()
+{
+	var x=document.forms["myForm"]["email"].value;
+	var atpos=x.indexOf("@");
+	var dotpos=x.lastIndexOf(".");
+	if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+	  {
+	  alert("Not a valid e-mail address");
+	  return false;
+	  }
+}
+
+</script>
+</style>
+</head>
+
+<body align="center">
+<div class="main" align="center">	
+    <div class="title" id="title" align="center">
+    
+    </div>
+    <br />
+    <div class="form" align="center">
+    <img src="images/Logo.png" width="250" height="125" style="padding:20px;"/>
+        <div class="statement" >Welcome to our Assessment</div>
+         <div class="statement" style="font-size:16px;" align="center"> 
+              <form action="Loading/Loading.php" method="post">
+               <table>   			   
+                <tr><td align="center"> <input class="input" name="name" onclick="this.value=''" value="Name" size="33" /></td></tr>
+                <tr><td align="center"> <input class="input" name="password" onclick="this.value=''" type="password" value="Password" size="33" /></td></tr>     
+                <tr><td align="center">
+				<input name="submit" type="submit" value="Log In" /></td></tr>				
+                </table>
+              </form> 
+         </div>
+    </div>
+</div>
+</body >
+</html>

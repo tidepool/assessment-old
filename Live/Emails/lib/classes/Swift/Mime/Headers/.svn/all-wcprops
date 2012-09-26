@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/assesmentnew/!svn/ver/671/Live/Emails/lib/classes/Swift/Mime/Headers
+END
+AbstractHeader.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/assesmentnew/!svn/ver/671/Live/Emails/lib/classes/Swift/Mime/Headers/AbstractHeader.php
+END
+UnstructuredHeader.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/assesmentnew/!svn/ver/671/Live/Emails/lib/classes/Swift/Mime/Headers/UnstructuredHeader.php
+END
+IdentificationHeader.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/assesmentnew/!svn/ver/671/Live/Emails/lib/classes/Swift/Mime/Headers/IdentificationHeader.php
+END
+MailboxHeader.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/assesmentnew/!svn/ver/671/Live/Emails/lib/classes/Swift/Mime/Headers/MailboxHeader.php
+END
+ParameterizedHeader.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/assesmentnew/!svn/ver/671/Live/Emails/lib/classes/Swift/Mime/Headers/ParameterizedHeader.php
+END
+PathHeader.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/assesmentnew/!svn/ver/671/Live/Emails/lib/classes/Swift/Mime/Headers/PathHeader.php
+END
+DateHeader.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/assesmentnew/!svn/ver/671/Live/Emails/lib/classes/Swift/Mime/Headers/DateHeader.php
+END
